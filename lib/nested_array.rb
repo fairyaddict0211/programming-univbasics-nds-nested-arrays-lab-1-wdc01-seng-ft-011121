@@ -26,11 +26,12 @@ def sorted_matrix
 end
 
 def matrix_lookup(matrix, row, column)
- sorted_matrix[1][1] = "Avocadoes"
- assembled_matrix[1][1] = "Potatoes"
+  
+ matrix[row][column]
 end
 
 def matrix_update(matrix, row, column, new_value)
- sorted_matrix[0][2] = "Lemons"
- sorted_matrix[0] = ["Eggplant", "Grapefruit", "Lemons","Pineapple", "Watermelon"]
+  
+matrix[row][column] = new_value
+matrix
 end
